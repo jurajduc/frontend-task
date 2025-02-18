@@ -1,0 +1,93 @@
+
+.custom-text-field-wrapper {
+    text-align: left;
+  }
+  
+  .custom-text-field {
+    width: 100%;
+    padding: 13px 16px; /* As defined in figma */
+    height: 48px;
+    border: 1px solid var(--color-surface-x-high);
+    
+    border-radius: var(--dimension-radius-input);
+
+    background-color: var(--color-surface-x-low);
+
+    font-size: var(--font-body-m-size);
+    line-height: var(--font-body-m-line-height);
+    font-weight: var(--font-body-m-weight);
+    letter-spacing: var(--font-body-m-letter-spacing);
+  
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  .custom-text-field.disabled {
+    background-color: var(--color-state-default-disabled);
+    color: var(--color-content-on-disabled);
+  }
+  
+  .custom-text-field:focus {
+    caret-color: var(--color-surface-brand);
+    outline: none;
+  
+    border: 3px solid #484848;
+    padding: 11px 14px;
+  }
+  
+  .custom-text-field::placeholder {
+    opacity: 1;
+    color: var(--color-content-on-neutral-low);
+    
+    font-size: var(--font-body-m-size);
+    font-weight: var(--font-body-m-weight);
+    letter-spacing: var(--font-body-m-letter-spacing);
+  }
+  
+  .custom-text-field.has-error {
+    border: 1px solid var(--color-content-on-neutral-danger);
+    padding: 13px 16px;
+  }
+  
+  .custom-text-field.has-error:focus {
+    border: 3px solid var(--color-content-on-neutral-danger);
+    padding: 11px 14px;
+  
+  }
+  
+  .custom-text-field-error-message {
+    color: var(--color-content-on-neutral-danger);
+    font-size: var(--font-error-label-size);
+    margin-top: var(--dimensions-xs-spacing);
+  }
+  
+  .custom-text-field-label {
+    display: block;
+    margin-bottom: var(--dimensions-xs-spacing);
+
+    font-size: var(--font-label-m-size);
+    height: var(--font-label-m-line-height);
+    font-weight: var(--font-label-m-weight);
+  }
+  
+  .custom-text-field-label .has-error {
+    color: var(--color-content-on-neutral-danger);
+  }
+  
+  
+  .custom-text-field-optional-label {
+    margin-left: var(--dimensions-xs-spacing);
+    color: var(--color-content-on-optional);
+
+    font-size: var(--font-label-s-size);
+    font-weight: var(--font-label-s-weight);
+    /* This is technically incorrect, but it aligns the label vertically
+    with the bigger label in front of it that has this line height */
+    line-height: var(--font-label-m-line-height);
+    height: var(--font-label-m-line-height);
+    
+
+    
+  }
+  

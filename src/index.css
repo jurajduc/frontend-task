@@ -1,0 +1,60 @@
+@font-face {
+  font-family: onAirVar;
+  /* src: url(/public/OnAirVar.woff); */
+  src: url(OnAirVar.woff);
+}
+
+:root {
+  --color-surface-x-low: #ffffff;
+  --color-surface-x-high: #8c8c9a;
+  --color-surface-brand: #0050ff;
+  --color-surface-danger: #dc2828;
+
+  --color-state-default-focus: rgba(26, 26, 26, 0.8); /* #1A1A1ACC, 80% */
+  --color-state-default-hover: rgba(26, 26, 26, 0, 06); /* #1A1A1A, 6% */
+  --color-state-default-disabled: #eee; /* THIS IS NOT DEFINED IN THE DESIGN */
+
+  --color-content-on-neutral-xx-high: #2c2c31;
+  --color-content-on-neutral-low: #c9c9ce; /* BTW THIS DOES NOT FULLFULL CONTRAST WCAG REQUIREMENTS */
+  --color-content-on-neutral-danger: #dc2828;
+
+  --font-label-m-size: 16px;
+  --font-label-m-line-height: 22px;
+  --font-label-m-weight: 500;
+  --font-label-m-letter-spacing: 0.16px;
+
+  --font-label-s-size: 14px;
+  --font-label-s-line-height: 17px;
+  --font-label-s-weight: 550;
+  --font-label-s-letter-spacing: 0.16px;
+
+  --font-body-m-size: 16px;
+  --font-body-m-line-height: 22px;
+  --font-body-m-weight: 400;
+  --font-body-m-letter-spacing: 0.01px;
+
+  --dimensions-xs-spacing: 8px;
+  --dimensions-s-spacing: 8px;
+  --dimensions-m-spacing: 8px;
+  --dimensions-l-spacing: 8px;
+
+  --dimension-radius-input: 12px;
+
+  /* NOT DEFINED IN VARIABLES - PICKED FROM FIGMA OR INTERPOLATED */
+  --color-content-on-disabled: #7d7d8a; 
+  --color-content-on-optional: #7d7d8a; /* ALSO WCAG problem but its like that in figma */
+  --font-error-label-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: "onAirVar", sans-serif;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.16px;
+  color: var(--color-content-on-neutral-xx-high);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
