@@ -8,7 +8,6 @@ function App() {
   const [secondFieldValue, setSecondFieldValue] = React.useState("");
   const [thirdFieldValue, setThirdFieldValue] = React.useState("");
   const [lastFieldValue, setLastFieldValue] = React.useState("");
-  
 
   return (
     <div className="app">
@@ -59,8 +58,6 @@ function App() {
             disabled
           />
         </div>
-
-        
       </div>
     </div>
   );

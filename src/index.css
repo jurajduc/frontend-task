@@ -41,7 +41,7 @@
   --dimension-radius-input: 12px;
 
   /* NOT DEFINED IN VARIABLES - PICKED FROM FIGMA OR INTERPOLATED */
-  --color-content-on-disabled: #7d7d8a; 
+  --color-content-on-disabled: #7d7d8a;
   --color-content-on-optional: #7d7d8a; /* ALSO WCAG problem but its like that in figma */
   --font-error-label-size: 12px;
 }
